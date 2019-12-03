@@ -1,0 +1,22 @@
+image: gitlab.seld.rnd.ericsson.se:4567/eds/eds:latest
+
+stages:
+  - prep
+  - test
+
+prep:
+  stage: prep
+  script:
+    - npm install
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - node_modules
+  cache:
+    paths:
+      - node_modules
+
+test:
+  stage: test
+  script:
+    - npm run test

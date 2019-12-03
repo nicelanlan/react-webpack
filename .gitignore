@@ -1,0 +1,50 @@
+# packages #
+node_modules/
+# package-lock.json
+yarn.lock
+
+# ide #
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+.project
+.*proj
+.idea/
+.classpath
+
+# mac #
+.DS_Store
+ehthumbs.db
+# Icon?
+Thumbs.db
+
+# logs #
+*.log
+*.log.*
+
+# build #
+*.tgz
+*.gz
+*.zip
+*.rar
+lib/
+dist/
+
+# subversion #
+.svn/
+
+# cache #
+.awcache/
+dll/
+manifest.json
+
+# tests #
+/coverage
+
+# others #
+*.diff
+*.patch
+*.bak
